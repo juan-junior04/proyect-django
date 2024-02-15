@@ -1,0 +1,87 @@
+<!-- home.html -->
+
+{% extends "menu.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+            <img src="/static/images/imagen2.png" class="d-block mx-auto" alt="Logo 1" style="width: 700px;">
+        </div>
+        <div class="carousel-item" data-bs-interval="10000">
+            <img src="/static/images/Tamales.png" class="d-block mx-auto" alt="Tupac" style="width: 700px;">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<br>
+<div class="container text-center">
+    <img src="/static/images/title.png" class="rounded-circle mb-3" alt="Cliente 1" style="width: 150px; height: 150px; object-fit: cover;">
+</div>
+<div class="container mt-4" style="height: 500px; margin-top: 50px;">
+    <div class="row g-2">
+        <div class="col">
+            <div class="card h-100 mx-auto" style="width: 300px;">
+                <img src="/static/images/card1.png" class="card-img-top" alt="Card Image 1" style="width: 300px; height: 300px; object-fit: cover;">
+                <div class="card-body">
+                    <p class="card-text">Deliciosas arepas de maíz, perfectas para cualquier ocasión.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 mx-auto" style="width: 300px;">
+                <img src="/static/images/card2.png" class="card-img-top" alt="Card Image 2" style="width: 300px; height: 300px; object-fit: cover;">
+                <div class="card-body">
+                    <p class="card-text">Los auténticos tamales tolimenses, una experiencia gastronómica única.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 mx-auto" style="width: 300px;">
+                <img src="/static/images/card3.png" class="card-img-top" alt="Card Image 3" style="width: 300px; height: 300px; object-fit: cover;">
+                <div class="card-body">
+                    <p class="card-text">Exquisitas arepas de maíz con queso doble crema y mantequilla, ¡una delicia que no te puedes perder!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container text-center">
+    <img src="/static/images/title2.png" class="rounded-circle mb-3" alt="Cliente 1" style="width: 150px; height: 150px; object-fit: cover;">
+</div>
+
+<div class="container mt-4" style="height: 300px;">
+    
+    <div class="row g-2">
+        <div class="col text-center">
+            <!-- Imagen redonda del Cliente 1 con texto breve -->
+            <img src="/static/images/darwin.jpg" class="rounded-circle mb-3" alt="Cliente 1" style="width: 150px; height: 150px; object-fit: cover;">
+            <p>Comentarios positivos sobre nuestros productos.</p>
+        </div>
+        <div class="col text-center">
+            <!-- Imagen redonda del Cliente 2 con texto breve -->
+            <img src="/static/images/mono.jpg" class="rounded-circle mb-3" alt="Cliente 2" style="width: 150px; height: 150px; object-fit: cover;">
+            <p>Experiencia increíble con la calidad de los productos.</p>
+        </div>
+        <div class="col text-center">
+            <!-- Imagen redonda del Cliente 3 con texto breve -->
+            <img src="/static/images/messi.jpg" class="rounded-circle mb-3" alt="Cliente 3" style="width: 150px; height: 150px; object-fit: cover;">
+            <p>Satisfechos con la variedad y sabor de las opciones.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
